@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="231dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="400dp"
+        android:textColor="#0066FF"
+        android:text="Selesai" />
+
+    <EditText
+        android:id="@+id/tgl"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_below="@+id/judul"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="589dp"
+        android:hint="Tanggal Lahir" />
+
+    <Spinner
+        android:id="@+id/jk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tgl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="-568dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="529dp" />
+
+    <EditText
+        android:id="@+id/kota"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_below="@+id/nohp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="-367dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="469dp"
+        android:hint="Cari Kota/Kabupaten" />
+
+
+</RelativeLayout>

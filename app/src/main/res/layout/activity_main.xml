@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <!--Layout Navigasi-->
+    <RelativeLayout
+        android:id="@+id/relativelayout3_home"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_menu_bawah">
+
+        <ImageButton
+            android:id="@+id/btnChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_chat"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/btnHome"
+            android:layout_marginLeft="70dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_home"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="53dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_help"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btnAkun"
+            android:layout_marginRight="70dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_akun"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="53dp"
+            />
+
+        <TextView
+            android:id="@+id/txtChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnChat"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/txtHome"
+            android:layout_marginLeft="53dp"
+            android:layout_centerVertical="true"
+            android:text="Pesan"
+            android:textSize="12dp"
+            android:fontFamily="@font/pbold"
+            android:textColor="#A5A5A5"
+            />
+
+        <TextView
+            android:id="@+id/txtHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnHome"
+            android:layout_marginTop="2dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="44dp"
+            android:text="Home"
+            android:textSize="12dp"
+            android:fontFamily="@font/pbold"
+            android:textColor="#374E4E"
+            />
+
+        <TextView
+            android:id="@+id/txtHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnHelp"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/txtAkun"
+            android:layout_marginRight="48dp"
+            android:text="Bantuan"
+            android:textSize="12dp"
+            android:fontFamily="@font/pbold"
+            android:textColor="#A5A5A5"
+            />
+
+        <TextView
+            android:id="@+id/txtAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnAkun"
+            android:layout_marginTop="2dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="47dp"
+            android:text="Akun"
+            android:textSize="12dp"
+            android:fontFamily="@font/pbold"
+            android:textColor="#A5A5A5"
+            />
+
+    </RelativeLayout>
+    <!--Tutup Layout Navigasi-->
+
+
+</RelativeLayout>
