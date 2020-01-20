@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="330dp"
-        android:fontFamily="arial"
+        android:fontFamily="@font/psemibold"
         android:textColor="#fff"
         />
 
