@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_profil"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/lingkaran"
+
+        >
+
+        <ImageView
+            android:id="@+id/gambardokter"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_account_profile">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/namadokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/layout_profil"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/pbold"
+        android:textSize="14dp"
+        android:text="dr. Sinta Chaira Maulanisa, Sp.B">
+    </TextView>
+
+    <TextView
+        android:id="@+id/jenisdokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/namadokter"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/preguler"
+        android:textSize="12dp"
+        android:text="Dokter Bedah">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@id/jenisdokter"
+        android:background="@drawable/bg_dompetgerak_home">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/psemibold"
+            android:text=""/>
+
+    </RelativeLayout>
+</RelativeLayout>
