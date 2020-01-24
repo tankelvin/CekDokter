@@ -6,4 +6,6 @@
     <color name="orange">#FF7F00</color>
     <color name="bgcolor">#F7F6FB</color>
     <color name="white">#FFFFFF</color>
+    <color name="blue">#0066FF</color>
+    <color name="black">#000</color>
 </resources>

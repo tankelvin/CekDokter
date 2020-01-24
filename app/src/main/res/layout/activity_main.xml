@@ -26,17 +26,18 @@
 
     <EditText
         android:id="@+id/emailLogin"
-        android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_below="@id/gambar1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="64dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="64dp"
-        android:hint="  Masukkan Email"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/edittext_daftar1"/>
+        android:background="@drawable/edittext_daftar1"
+        android:hint="Masukkan Email"
+        android:paddingStart="8dp"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/passwordLogin"
@@ -48,7 +49,8 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="20px"
         android:layout_marginEnd="64dp"
-        android:hint="  Password"
+        android:hint="Password"
+        android:paddingStart="8dp"
         android:layout_below="@id/emailLogin"
         android:background="@drawable/edittext_daftar1"/>
 
