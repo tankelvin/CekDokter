@@ -71,7 +71,8 @@
         <ListView
             android:id="@+id/listJanji"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:padding="4dp"/>
 
     </RelativeLayout>
     <!--Start of Nav-->

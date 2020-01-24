@@ -95,7 +95,8 @@
             android:id="@+id/ListChat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/headChat"/>
+            android:layout_below="@id/headChat"
+            android:padding="4dp"/>
     </RelativeLayout>
 
 

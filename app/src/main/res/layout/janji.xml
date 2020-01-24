@@ -96,7 +96,8 @@
             android:id="@+id/listJanji"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/headJanji"/>
+            android:layout_below="@id/headJanji"
+            android:padding="4dp"/>
 
     </RelativeLayout>
 
