@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/lingkaran">
+
+        <ImageView
+            android:id="@+id/fotodokter"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_account_profile"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/namadokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/layout_foto"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="22dp"
+        android:text="dr. Agung Prabowo, S. Pd, M.Kes, FINASIM"
+        android:fontFamily="@font/psemibold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/jenisdokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/layout_foto"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/namadokter"
+        android:text="Spesialis Penyakit Dalam"
+        android:fontFamily="@font/preguler"
+        android:textSize="12dp"/>
+
+
+</RelativeLayout>
