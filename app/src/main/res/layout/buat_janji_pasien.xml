@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headerChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_menu_bawah">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+            android:fontFamily="@font/pbold"
+            android:textSize="18dp"
+            android:text="ISI DATA PASIEN"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/data_pasien"
+        android:layout_below="@id/headerChat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/preguler"
+        android:textSize="16dp"
+        android:text="Selesaikan registrasui anda dengan
+        mengisi data dibawah ini"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/noKTP"
+        android:layout_below="@id/data_pasien"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:fontFamily="@font/preguler"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_daftar1"
+        android:hint="No KTP Pasien" android:paddingStart="8dp"/>
+
+
+    <EditText
+        android:id="@+id/alamatPasien"
+        android:layout_below="@id/noKTP"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="@font/preguler"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+        android:hint="Alamat sesuai KTP Pasien"
+        android:background="@drawable/edittext_daftar1"
+        android:paddingStart="8dp"
+        android:ems="10" />
+
+    <RelativeLayout
+        android:id="@+id/jk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/alamatPasien"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/jdlJK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16dp"
+            android:text="Jenis Kelamin"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/Pria"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jdlJK"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_dompetgerak_home"
+            android:text="Pria"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/Wanita"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/jdlJK"
+            android:layout_toEndOf="@+id/Pria"
+            android:background="@drawable/bg_dompetgerak_home"
+            android:text="Wanita"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jk"
+        android:background="@drawable/button_action"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="16dp"
+        android:text="Kirim"
+        android:textColor="@color/white"/>
+</RelativeLayout>
