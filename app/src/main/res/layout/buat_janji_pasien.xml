@@ -16,47 +16,25 @@
             android:layout_marginStart="22dp"
             android:fontFamily="@font/pbold"
             android:textSize="18dp"
-            android:text="CHAT DOKTER"/>
+            android:text="ISI DATA PASIEN"/>
     </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/Alert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+
+    <TextView
+        android:id="@+id/data_pasien"
         android:layout_below="@id/headerChat"
-        android:background="@drawable/alert"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        >
-        <TextView
-            android:id="@+id/judul"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginStart="12dp"
-            android:fontFamily="@font/pbold"
-            android:textSize="12dp"
-            android:text="Ketentuan Pengguna"
-            />
-        <TextView
-            android:id="@+id/isiAlert"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/judul"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="12dp"
-            android:fontFamily="@font/pmedium"
-            android:textSize="10dp"
-            android:text="Fitur ini tidak bisa digunakan sebagai kepastian
-            diagnosis kondisi yang dialami. Perbincangan dalam aplikasi tidak bisa
-            menggantikan interaksi langsung dengan dokter. Untuk kondisi darurat
-            segera temui dokter"/>
-    </RelativeLayout>
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/preguler"
+        android:textSize="16dp"
+        android:text="Selesaikan registrasui anda dengan
+        mengisi data dibawah ini"
+        android:textAlignment="center"/>
+
     <RelativeLayout
-        android:id="@+id/kolom1"
-        android:layout_below="@id/Alert"
+        android:id="@+id/data1"
+        android:layout_below="@id/data_pasien"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_dompetgerak_home"
@@ -65,20 +43,21 @@
         android:layout_marginEnd="20dp"
         >
         <EditText
-            android:id="@+id/jdlPertanyaan"
+            android:id="@+id/noktp"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:fontFamily="@font/preguler"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
-            android:hint="Tulis judul pertanyaan Anda"/>
+            android:hint="No KTP Pasien"
+            />
 
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/kolom2"
-        android:layout_below="@id/kolom1"
+        android:id="@+id/data2"
+        android:layout_below="@id/data1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_dompetgerak_home"
@@ -87,13 +66,13 @@
         android:layout_marginEnd="20dp"
         >
         <EditText
-            android:id="@+id/isiPertanyaan"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="100dp"
             android:fontFamily="@font/preguler"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
-            android:hint="Tulis pertanyaan Anda"
+            android:hint="Alamat sesuai KTP Pasien"
+            android:ems="10"
             />
 
     </RelativeLayout>
@@ -101,13 +80,12 @@
     <Button
         android:layout_width="376dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/kolom2"
+        android:layout_below="@id/data2"
         android:background="@color/orange"
         android:layout_marginTop="12dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:textSize="13dp"
         android:text="Kirim"
-        android:textColor="@color/white"
-        android:onClick="kirimChat"/>
+        android:textColor="@color/white"/>
 </RelativeLayout>

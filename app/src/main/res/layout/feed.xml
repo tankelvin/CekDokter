@@ -15,6 +15,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="55dp"
             android:layout_marginLeft="30dp"
+            android:fontFamily="@font/psemibold"
             android:text="Jelajahi Informasi"
             android:textSize="20dp"
             android:textColor="#fff"/>
@@ -24,10 +25,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="84dp"
             android:layout_marginLeft="30dp"
-            android:text="Jelajahi Informasi"
-            android:textSize="15dp"
+            android:text="Terkini dan terlengkap"
+            android:textSize="14dp"
+            android:fontFamily="@font/preguler"
             android:textColor="#fff"/>
 
         <SearchView

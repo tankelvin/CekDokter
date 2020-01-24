@@ -11,11 +11,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="40dp"
             android:layout_marginLeft="30dp"
             android:text="CEKDOKTER"
             android:textSize="25dp"
-            android:textColor="#fff"/>
+            android:textColor="#fff"
+            android:fontFamily="@font/pbold"/>
 
         <ImageView
             android:id="@+id/gambar3"
