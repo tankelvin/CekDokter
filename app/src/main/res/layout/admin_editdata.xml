@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/juduleditdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT DATA"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#fFF"
+        android:fontFamily="@font/psemibold"
+        />
+
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/layout_edit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text="Edit"
+        android:onClick="edit_data"
+        android:textColor="#0066FF"
+        android:background="@drawable/bg_dompetgerak_home"/>
+
+    <Button
+        android:id="@+id/hapus"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/layout_edit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="195dp"
+        android:background="@drawable/bg_dompetgerak_home"
+        android:onClick="hapus_data"
+        android:text="Hapus"
+        android:textColor="#0066FF" />
+
+    <RelativeLayout
+        android:id="@+id/layout_edit"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_help1_help"
+        android:layout_below="@id/juduleditdata">
+
+        <EditText
+            android:id="@+id/namadokteredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:hint="Nama Lengkap"
+            android:textSize="16dp"
+            android:fontFamily="@font/pmedium"
+            />
+
+        <EditText
+            android:id="@+id/spesialisedit"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namadokteredit"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:hint="Masukkan Spesialis"
+            android:textSize="16dp"
+            android:fontFamily="@font/pmedium"/>
+
+        <EditText
+            android:id="@+id/nohpedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spesialisedit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="16dp"
+            android:hint="Nomor Ponsel" />
+
+        <EditText
+            android:id="@+id/passwordedit"
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nohpedit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="Password"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/rsedit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/passwordedit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Rumah Sakit"/>
+
+        <EditText
+            android:id="@+id/alamatDokteredit"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_below="@id/rsedit"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:hint="Alamat"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+</RelativeLayout>

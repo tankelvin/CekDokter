@@ -30,6 +30,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Nama Spesialis" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Action" />
+
         </TableRow>
 
         <TableRow
@@ -49,6 +55,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Kulit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="edit | hapus" />
         </TableRow>
 
         <TableRow
@@ -69,6 +80,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="THT" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="edit | hapus" />
         </TableRow>
         <TableRow
             android:background="#ECEFF1"
@@ -88,7 +104,25 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Gigi" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="edit | hapus" />
         </TableRow>
+
     </TableLayout>
+
+
+    <!-- manggil form admin_tambahdata -->
+    <Button
+        android:id="@+id/tambahkandata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:layout_below="@id/tablelayoutid"
+        android:layout_marginStart="7dp">
+
+    </Button>
 
 </RelativeLayout>
