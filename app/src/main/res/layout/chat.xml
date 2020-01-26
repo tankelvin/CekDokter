@@ -146,6 +146,7 @@
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@id/btnChat"
             android:layout_marginLeft="100dp"
+            android:onClick="janji"
             />
 
         <TextView
@@ -174,6 +175,7 @@
             android:layout_marginTop="10dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="60dp"
+            android:onClick="article"
             />
 
         <TextView

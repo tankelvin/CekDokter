@@ -65,7 +65,8 @@
         android:layout_marginEnd="40dp"
         android:layout_below="@id/passwordLogin"
         android:text="Login"
-        android:background="@drawable/bg_dompetgerak_home"/>
+        android:background="@drawable/bg_dompetgerak_home"
+        android:onClick="loginAkun"/>
 
     <TextView
         android:id="@+id/textView"
@@ -84,6 +85,7 @@
 
     <TextView
         android:id="@+id/textView2"
+        android:inputType="textUri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
@@ -95,7 +97,7 @@
         android:textSize="17dp"
         android:text="Daftar disini"
         android:textColor="#fFF"
-        android:onClick="daftar"/>
+        android:onClick="daftarAkun"/>
 
 
 </RelativeLayout>
