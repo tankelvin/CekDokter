@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tablelayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TableRow
+            android:id="@+id/rowlay"
+            android:background="@android:color/holo_blue_light"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="No" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Nama Dokter" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nama Spesialis" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Action" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dokter A" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kulit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="edit | hapus" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dokter B" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="THT" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="edit | hapus" />
+        </TableRow>
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dokter C" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gigi" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="edit | hapus" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <!-- manggil form admin_tambahdata -->
+    <Button
+        android:id="@+id/tambahkandata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:layout_below="@id/tablelayoutid"
+        android:layout_marginStart="7dp">
+
+    </Button>
+
+</RelativeLayout>
