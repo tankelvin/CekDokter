@@ -5,4 +5,8 @@
         <item>Desain</item>
         <item>Apapun</item>
     </string-array>
+    <string-array name="jenisKelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
 </resources>

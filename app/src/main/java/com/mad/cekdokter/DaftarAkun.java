@@ -13,7 +13,7 @@ public class DaftarAkun extends AppCompatActivity {
     }
 
     public void daftarAkun(View view){
-        Intent intent = new Intent(getApplicationContext(),Chat.class);
+        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);
     }
 }

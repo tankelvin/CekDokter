@@ -20,13 +20,13 @@
 
         <ImageView
             android:id="@+id/gambar3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="45dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/profile" />
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/round_account_button_white" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -113,14 +113,15 @@
 
         <ImageButton
             android:id="@+id/btnChat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/chat_passive"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/chat_bubble_passive"
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="65dp"
             android:onClick="chat"
             />
 
@@ -137,18 +138,20 @@
             android:textSize="12dp"
             android:fontFamily="@font/pbold"
             android:textColor="#A5A5A5"
+            android:onClick="chat"
             />
 
         <ImageButton
             android:id="@+id/btnJanji"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/janji_active"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/appointment"
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:layout_toEndOf="@id/btnChat"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="105dp"
             />
 
         <TextView
@@ -169,12 +172,13 @@
 
         <ImageButton
             android:id="@+id/btnFeed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/feed_passive"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/news_passive"
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="60dp"
             android:onClick="article"
@@ -193,6 +197,7 @@
             android:textSize="12dp"
             android:fontFamily="@font/pbold"
             android:textColor="#A5A5A5"
+            android:onClick="article"
             />
 
     </RelativeLayout>
