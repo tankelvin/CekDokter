@@ -16,10 +16,12 @@ public class Janji extends AppCompatActivity {
     public void article(View view){
         Intent intent = new Intent(Janji.this,Article.class);
         startActivity(intent);
+        finish();
     }
 
     public void chat(View view){
         Intent intent = new Intent(Janji.this,Chat.class);
         startActivity(intent);
+        finish();
     }
 }

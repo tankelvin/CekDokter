@@ -19,11 +19,13 @@ public class Article extends AppCompatActivity {
     public void chat(View view){
         Intent intent = new Intent(Article.this,Chat.class);
         startActivity(intent);
+        finish();
 
     }
 
     public void janji(View view){
         Intent intent = new Intent(Article.this,Janji.class);
         startActivity(intent);
+        finish();
     }
 }
