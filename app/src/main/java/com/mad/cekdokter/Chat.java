@@ -14,12 +14,12 @@ public class Chat extends AppCompatActivity {
     }
 
     public void janji(View view){
-        Intent intent = new Intent(getApplicationContext(),Janji.class);
+        Intent intent = new Intent(Chat.this,Janji.class);
         startActivity(intent);
     }
 
     public void article(View view){
-        Intent intent = new Intent(getApplicationContext(),Article.class);
+        Intent intent = new Intent(Chat.this,Article.class);
         startActivity(intent);
     }
 }

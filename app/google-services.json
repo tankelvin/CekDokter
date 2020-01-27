@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "662700029481",
+    "firebase_url": "https://cekdokter-11655.firebaseio.com",
+    "project_id": "cekdokter-11655",
+    "storage_bucket": "cekdokter-11655.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662700029481:android:52309543e8070a6b730e38",
+        "android_client_info": {
+          "package_name": "com.mad.cekdokter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662700029481-n379ttkbja6k4nss4ravgtis6hd389lc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mad.cekdokter",
+            "certificate_hash": "74383a0ebb5f09db8cbe026fa9015f55a09accc8"
+          }
+        },
+        {
+          "client_id": "662700029481-ocvacseu0rgoo12mfojtmbl5eebsta5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvZZx07vMyJdUZNKsljcxjnKBtWvOdC2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662700029481-ocvacseu0rgoo12mfojtmbl5eebsta5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
