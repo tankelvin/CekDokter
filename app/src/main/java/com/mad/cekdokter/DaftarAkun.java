@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-import com.mad.cekdokter.table.User;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -23,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
+import com.google.firebase.firestore.auth.User;
 
 public class DaftarAkun extends AppCompatActivity implements View.OnClickListener{
 
@@ -33,8 +32,6 @@ public class DaftarAkun extends AppCompatActivity implements View.OnClickListene
     private FirebaseAuth mAuth;
     private EditText edtEmail;
     private EditText edtPass;
-    private EditText edtNama;
-    private EditText edtNoHp;
     private Button btndaftar;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +41,8 @@ public class DaftarAkun extends AppCompatActivity implements View.OnClickListene
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
 
-        edtNama = (EditText)findViewById(R.id.nama);
         edtEmail = (EditText)findViewById(R.id.email);
         edtPass = (EditText)findViewById(R.id.password);
-        edtNoHp=(EditText) findViewById(R.id.nohp);
         btndaftar = (Button) findViewById(R.id.btnDaftar);
 
         btndaftar.setOnClickListener(this);
@@ -59,10 +54,8 @@ public class DaftarAkun extends AppCompatActivity implements View.OnClickListene
             return;
         }
 
-        String nama=edtNama.getText().toString();
         String email=edtEmail.getText().toString();
         String password=edtPass.getText().toString();
-        String nohp=edtNoHp.getText().toString();
 
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -84,15 +77,17 @@ public class DaftarAkun extends AppCompatActivity implements View.OnClickListene
     private void onAuthSuccess(FirebaseUser user) {
         String username = usernameFromEmail(user.getEmail());
 
-        // membuat User baru
+        // membuat Admin baru
         writeNewUser(user.getUid(), username, user.getEmail());
 
+        startActivity(new Intent(DaftarAkun.this,MainActivity.class));
+        finish();
     }
 
     private void writeNewUser(String userId, String name, String email) {
-        User user = new User(name,email);
+        Admin admin = new Admin(name, email);
 
-        mDatabase.child("user").child(userId).setValue(user);
+        mDatabase.child("user").child(userId).setValue(admin);
     }
 
     private boolean validateForm() {
@@ -109,20 +104,6 @@ public class DaftarAkun extends AppCompatActivity implements View.OnClickListene
             result = false;
         } else {
             edtPass.setError(null);
-        }
-
-        if (TextUtils.isEmpty(edtNama.getText().toString())) {
-            edtNama.setError("Required");
-            result = false;
-        } else {
-            edtNama.setError(null);
-        }
-
-        if (TextUtils.isEmpty(edtNoHp.getText().toString())) {
-            edtNoHp.setError("Required");
-            result = false;
-        } else {
-            edtNoHp.setError(null);
         }
 
         return result;
@@ -142,5 +123,4 @@ public class DaftarAkun extends AppCompatActivity implements View.OnClickListene
             signUp();
         }
     }
-
 }
