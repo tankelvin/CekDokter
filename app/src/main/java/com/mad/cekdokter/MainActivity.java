@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String TAG = "LoginActivity";
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Toast.makeText(MainActivity.this,"Login Berhasil",Toast.LENGTH_SHORT).show();
 
-        startActivity(new Intent(MainActivity.this, MainActivity.class));
+        startActivity(new Intent(MainActivity.this, Chat.class));
         finish();
     }
 
